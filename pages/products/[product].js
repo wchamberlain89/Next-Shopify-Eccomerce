@@ -3,7 +3,9 @@ import ProductPageContent from '../../components/ProductPageContent'
 
 const ProductPage = ({ product }) => {
   return (
-    <ProductPageContent product={product} />
+    <div className="min-h-screen py-12 pt-20">
+      <ProductPageContent product={product} />  
+    </div>
   );
 };
 
