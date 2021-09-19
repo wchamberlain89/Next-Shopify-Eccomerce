@@ -1,7 +1,6 @@
 import ProductCard from './ProductCard';
 
 const ProductList = ({ products }) => {
-  console.log(products)
   return (
       <div className="bg-white max-w-2xl mx-auto py-16 px-6 lg:px-8 lg:max-w-7xl">
         <h2 className="text-xl font-extrabold text-gray-900 mb-6">Products</h2>
