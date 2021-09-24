@@ -13,8 +13,6 @@ const ShopProvider = ({ children }) => {
     if(localStorage.checkout_id) {
       const cartObject = JSON.parse(localStorage.checkout_id)
 
-      console.log("Cart object is", cartObject)
-
       if (cartObject[0].id) {
         setCart([cartObject[0]])
       } else if (cartObject[0].length > 0) {
@@ -31,7 +29,6 @@ const ShopProvider = ({ children }) => {
 
     if (cart.length === 0) {
       setCart([newItem])
-      console.log(newItem, " new item")
       const checkout = await createCheckout(newItem.id, newItem.variantQuantity)
 
       setCheckoutId(checkout.id)

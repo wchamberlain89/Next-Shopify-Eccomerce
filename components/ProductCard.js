@@ -2,7 +2,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { formatter } from '../utils/helpers'
 
-import helloAPI from './../pages/api/hello';
 const ProductCard = ({ product }) => {
   const { handle, title } = product.node;
   const { altText, originalSrc } = product.node.images.edges[0].node

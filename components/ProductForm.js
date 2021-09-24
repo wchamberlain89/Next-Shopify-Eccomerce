@@ -16,7 +16,7 @@ const ProductForm = ({ product }) => {
     return {
       id: variant.node.id,
       title: variant.node.title,
-      handle: variant.node.handle,
+      handle: product.handle,
       image: variant.node.image?.originalSrc,
       options: allOptions,
       variantTitle: variant.node.title,
