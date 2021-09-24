@@ -2,6 +2,7 @@ import Image from 'next/image'
 import ProductForm from './ProductForm'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper'
+import RecommendedList from './RecommendedList'
 
 const ProductPageContent = ({ product }) => {
 
@@ -16,6 +17,7 @@ const ProductPageContent = ({ product }) => {
   })
 
   return (
+  <>
     <div className={`flex flex-col justify-center items-center space-y-8 
                      md:flex-row md:items-start md:space-y-0 md:space-x-4 
                      lg:space-x-8 max-w-6xl w-11/12 mx-auto`}>
@@ -35,6 +37,11 @@ const ProductPageContent = ({ product }) => {
       </div>
       <ProductForm product={product} /> 
     </div>
+    <p className="px-6 pt-16 space-y-8 md:space-x-4 lg:space-x-8 max-w-3xl mx-auto text-center text-3xl">
+      {product.description}
+    </p>
+    <RecommendedList current={product.id} products={product.collections.edges[0].node.products.edges} />
+  </>
   );
 };
 
