@@ -1,5 +1,5 @@
 import Nav from './Nav'
-
+import Footer from './Footer'
 const Layout = ({ children }) => {
   return (
     <div className="flex flex-col justify-between min-h-screen">
@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
       <main>
         {children}
       </main>
-      <footer className="py-40 text-center text-7xl bg-blue-200">Footer</footer>
+      <Footer />
     </div>
   );
 };
