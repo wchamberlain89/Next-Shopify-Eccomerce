@@ -1,7 +1,7 @@
 # NextJS Shopify Eccomerce
 
 Eccomerce Site using Next.js and the Shopify Storefront API.
-### <a href='https://next-shopify-eccomerce.vercel.app'> Live Demo </a>
+### <a href='https://next-shopify-eccomerce.vercel.app' target="_blank"> Live Demo </a>
 ## Technologies
 
 Next.js
