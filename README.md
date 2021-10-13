@@ -1,7 +1,7 @@
 # NextJS Shopify Eccomerce
 
 Eccomerce Site using Next.js and the Shopify Storefront API.
-
+### Live Demo - <a href='next-shopify-eccomerce.vercel.app'> View Site </a>
 ## Technologies
 
 Next.js
@@ -21,7 +21,7 @@ Storefront API / GraphQL
 Setup Environment variables
   Create a .env.local file in the root directory. You need to add these variables:
 
-  SHOPIFY_STORE_FRONT_ACCESS_TOKEN=
-  SHOPIFY_STORE_DOMAIN=
-  SHOPIFY_COLLECTION=
-  LOCAL_STORAGE_NAME=
+  SHOPIFY_STORE_FRONT_ACCESS_TOKEN= </br>
+  SHOPIFY_STORE_DOMAIN= </br>
+  SHOPIFY_COLLECTION= </br>
+  LOCAL_STORAGE_NAME= </br>
